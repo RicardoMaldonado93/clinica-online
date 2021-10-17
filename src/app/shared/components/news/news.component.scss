@@ -1,0 +1,24 @@
+@import "__variables";
+
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.darken {
+  background-color: $cl-background;
+  padding: 11px;
+  small {
+    color: $cl-text-color-white;
+  }
+  .darken {
+    color: darken($cl-text-color-white, 25);
+  }
+  .strong{
+      font-weight: bold;
+  }
+}

@@ -1,0 +1,67 @@
+<cl-news></cl-news>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      Medical<strong>PRESS</strong>
+      <i class="fas fa-plus-square ms-1 logo" ></i>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse w-100" id="navbarNav">
+     <ng-container *ngTemplateOutlet="public"></ng-container>
+      <button type="button" class="btn  ml-auto">Login</button>    
+    </div>
+
+  </div>
+  
+</nav>
+
+<ng-template #public>
+  <ul class="navbar-nav  justify-content-center w-100">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Doctores</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Galeria</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link ">Contacto</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Registro</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled">Mis Turnos</a>
+    </li>
+  </ul>
+</ng-template>
+
+<ng-template #backoffice>
+  <ul class="navbar-nav  justify-content-center w-100">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Registro</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Usuarios</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled">Turnos</a>
+    </li>
+
+  </ul>
+</ng-template>

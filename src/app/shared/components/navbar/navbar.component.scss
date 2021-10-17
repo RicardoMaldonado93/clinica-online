@@ -1,0 +1,26 @@
+@import "__variables";
+
+nav{
+    padding: 30px;
+}
+.logo{
+    color: $cl-secondary;
+    font-size: 22px;
+}
+
+li:hover{
+    transition: background-color 600ms ease-out 100ms;
+    background-color: $cl-primary;
+    a.nav-link {
+        color: $cl-text-color-white;
+    }
+}
+button{
+    background: $cl-primary;
+    color: $cl-text-color-white;
+    &:hover{
+        transition: background-color 200ms ease-out;
+        background-color: darken($cl-primary, 15);
+        color: $cl-text-color-white;
+    }
+}

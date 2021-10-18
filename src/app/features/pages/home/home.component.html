@@ -1,4 +1,4 @@
-<div class="col-12 body">
+<div class="col-12 body pb-5">
   <div class="clearfix">
     <cl-carousel [images]="carouselImages"></cl-carousel>
   </div>
@@ -32,13 +32,35 @@
           </div>
         </div>
         <div class="col-lg-8 col-md-8 col-sm-12">
-          <div class="row">
-            <div class="col-6" *ngFor="let item of servicesItems">
+          <div class="row py-5">
+            <div class="col-lg-6 col-md-6 col-sm-12 " *ngFor="let item of servicesItems">
               <cl-item-card [item]="item"></cl-item-card>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="col-12 mt-5 text-center container elementToFadeInAndOut" >
+      <div class="row mb-5">
+        <h1>Conozca nuestros <strong>Especialistas Médicos</strong></h1>
+        <h6 class="px-5">
+          Atque atque ipsum aut eveniet voluptatibus minus velit. Itaque tempora
+          non aut laborum quae blanditiis minus voluptates. Non voluptatem nobis
+          a in voluptates. Magnam placeat qui fuga est eaque iste itaque. Dolor
+          nobis qui aut dolorum id suscipit quis.
+        </h6>
+      </div>
+      <div class="row px-5">
+        <div class="col-sm-12 col-md-3 col-xl-3" *ngFor="let personal of personalInfo">
+          <cl-personal-card [personal]="personal"></cl-personal-card>
+          <a
+          class="btn btn-lg btn-read-more"
+          href="Jumbo action link"
+          role="button"
+          >Ver más</a
+        >
+        </div>
+      </div>
   </div>
 </div>

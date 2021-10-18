@@ -1,0 +1,21 @@
+@import "__variables";
+
+.personal-card {
+  background: $cl-text-color-white;
+}
+
+.text-content {
+  padding: 20px 15px 30px;
+}
+
+h5 {
+  font-weight: bold;
+  font-family: $cl-font;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.75;
+}

@@ -1,3 +1,4 @@
+import { IPersonal } from './../../../shared/models/Personal';
 import { IItem } from './../../../shared/models/Item';
 import { Component, OnInit } from '@angular/core';
 import { ICarrousel } from '@shared/models/Carrousel';
@@ -10,13 +11,17 @@ import { ICarrousel } from '@shared/models/Carrousel';
 export class HomeComponent implements OnInit {
   carouselImages!: ICarrousel[];
   servicesItems!: IItem[];
+  personalInfo!: IPersonal[];
 
   constructor() {
     this.setCarousel();
     this.setItems();
+    this.setPersonalInfo()
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
 
   private setCarousel() {
     this.carouselImages = [
@@ -70,4 +75,37 @@ export class HomeComponent implements OnInit {
       }
     ]
   }
+
+  private setPersonalInfo(){
+    const lorem = "This text represents a brief introduction of doctor and this text will be displayed on homepage and all the places where multiple doctors are listed."
+    this.personalInfo = [
+      {
+        photo: "doctors/doctors-1.jpg",
+        name: "Addison",
+        lastName: "Alexander",
+        specialty: lorem
+      },
+      {
+        photo: "doctors/doctors-2.jpg",
+        name: "Addison",
+        lastName: "Alexander",
+        specialty: lorem
+      },
+      {
+        photo: "doctors/doctors-3.jpg",
+        name: "Addison",
+        lastName: "Alexander",
+        specialty: lorem
+      },
+      {
+        photo: "doctors/doctors-4.jpg",
+        name: "Addison",
+        lastName: "Alexander",
+        specialty: lorem
+      },
+
+    ]
+  }
+
+
 }

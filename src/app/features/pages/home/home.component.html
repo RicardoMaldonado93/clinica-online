@@ -1,1 +1,44 @@
-<cl-carousel [images]="carouselImages"></cl-carousel>
+<div class="col-12 body">
+  <div class="clearfix">
+    <cl-carousel [images]="carouselImages"></cl-carousel>
+  </div>
+  <div class="col-12 mt-5 items-container">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div
+          class="
+            col-lg-4 col-md-4 col-sm-12
+            justify-content-center
+            align-content-center
+          "
+        >
+          <div class="row">
+            <h3><strong>Salud y Medicina</strong></h3>
+            <p class="mt-4">
+              Est quidem aut consectetur. Eos iure et architecto. Non eveniet
+              quidem occaecati provident repellat quam non. Assumenda placeat
+              necessitatibus quidem tempore ut. Sunt dolorem nam incidunt
+              voluptatem. Qui ducimus pariatur iste ex sed libero sed quo eum.
+              Autem magni in voluptas.
+            </p>
+          </div>
+          <div class="row text-center px-5">
+            <a
+              class="btn btn-lg btn-services"
+              href="Jumbo action link"
+              role="button"
+              >Nuestros Servicios</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <div class="row">
+            <div class="col-6" *ngFor="let item of servicesItems">
+              <cl-item-card [item]="item"></cl-item-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

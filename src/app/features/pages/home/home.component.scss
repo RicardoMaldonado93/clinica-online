@@ -1,0 +1,18 @@
+@import "__variables";
+
+.items-container {
+  padding: 90px 0 30px;
+  background: $cl-text-color-white;
+}
+
+.body{
+    background: $cl-main-background;
+}
+
+.btn-services{
+    background-color: $cl-secondary;
+    color: $cl-text-color-white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $cl-font;
+}

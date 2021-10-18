@@ -1,3 +1,4 @@
+import { IItem } from './../../../shared/models/Item';
 import { Component, OnInit } from '@angular/core';
 import { ICarrousel } from '@shared/models/Carrousel';
 
@@ -8,8 +9,11 @@ import { ICarrousel } from '@shared/models/Carrousel';
 })
 export class HomeComponent implements OnInit {
   carouselImages!: ICarrousel[];
+  servicesItems!: IItem[];
+
   constructor() {
-    this.setCarousel()
+    this.setCarousel();
+    this.setItems();
   }
 
   ngOnInit(): void {}
@@ -39,5 +43,31 @@ export class HomeComponent implements OnInit {
       },
       // {src:"sliders/slide-three.jpg", alt:'Laboratorio'},
     ];
+  }
+
+  private setItems(){
+    const lorem = "Quae modi architecto blanditiis ut voluptatem aut qui. Aut quisquam officiis quibusdam eaque. Natus dolores mollitia earum eaque ipsa est qui ea error."
+    this.servicesItems = [
+      {
+        title: "Centro de Rehabilitacion",
+        icon: "fa-plus-square",
+        desc:lorem
+      },
+      {
+        title: "Asesoramiento Medico ",
+        icon: "fa-medkit",
+        desc: lorem
+      },
+      {
+        title: "Doctores Calificados",
+        icon: "fa-user-md",
+        desc: lorem
+      },
+      {
+        title: "Servicios de Emergencias",
+        icon: "fa-ambulance",
+        desc: lorem
+      }
+    ]
   }
 }

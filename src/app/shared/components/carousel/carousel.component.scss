@@ -1,0 +1,89 @@
+@import "__variables";
+
+$large-padding: 5% 15%;
+
+.carousel-caption {
+  width: 100%;
+  height: 100%;
+  padding: 5% 10%;
+  margin: 0 auto;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  text-align: start;
+  h1,
+  p {
+    color: $cl-text-color-black;
+  }
+}
+
+::ng-deep.logo,
+.arrow {
+  color: $cl-secondary;
+}
+
+.btn-indicators {
+  background-color: $cl-secondary;
+}
+::ng-deep.logo {
+  font-size: 25px;
+}
+.arrow {
+  font-size: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  padding: 1%;
+  .carousel-control-prev-icon {
+    color: $cl-secondary;
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .carousel-caption {
+    padding: 5% 10%;
+    h1,
+    p {
+      max-width: 335px;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .carousel-caption {
+    padding: 5% 10%;
+    h1,
+    p {
+      max-width: 400px;
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .carousel-caption {
+    padding: $large-padding;
+    h1,
+    p {
+      max-width: 550px;
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .carousel-caption {
+    padding: $large-padding;
+    h1,
+    p {
+      max-width: 550px;
+    }
+  }
+}

@@ -3,6 +3,7 @@
 
 * {
   font-family: $cl-font;
+  box-sizing: border-box;
 }
 
 strong{
@@ -12,4 +13,5 @@ strong{
 html,body{
   width: 100%;
   height: 100%;
+  background: $cl-main-background;
 }

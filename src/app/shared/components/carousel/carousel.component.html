@@ -1,0 +1,31 @@
+<div id="carousel" class="carousel slide carousel-fade p-1" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <ng-container *ngFor="let img of images; index as i">
+      <button class="btn-indicators" type="button" data-bs-target="#carousel" [attr.data-bs-slide-to]="i" [ngClass]="{'active': i == 0}" aria-label="Slide 1"></button>
+    </ng-container>
+    
+  </div>
+
+    <div class="carousel-inner">
+        <ng-container *ngFor="let img of images; index as i">
+            <div class="carousel-item" [ngClass]="{'active': i == 0}" data-bs-interval="8000">
+              <img [attr.src]="'../../../assets/images/' + img.src" class="d-block w-100" [attr.alt]="img.alt">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 [innerHTML]="img.title">First slide label</h1>
+                <p [innerHTML]="img.desc">Some representative placeholder content for the first slide.</p>
+              </div>
+          </div>
+        </ng-container>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span><i class="fas fa-angle-left arrow" aria-hidden="true"></i></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span><i class="fas fa-angle-right arrow" aria-hidden="true"></i></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+

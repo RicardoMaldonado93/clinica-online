@@ -5,16 +5,7 @@
     "baseUrl": "src",
     "outDir": "./out-tsc/app",
     "types": [],
-    "paths": {
-      "@shared/*":["app/shared/*"],
-      "@styles/*":["app/styles/*"],
-    }
   },
-  "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
-  ],
-  "include": [
-    "src/**/*.d.ts"
-  ]
+  "files": ["src/main.ts", "src/polyfills.ts"],
+  "include": ["src/**/*.d.ts"]
 }

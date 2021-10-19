@@ -4,7 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from '@shared/shared.module';
 import { HomeComponent } from './home.component';
 
-const router: Routes = [{ path: '', component: HomeComponent }];
+const router: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+  },
+  { path: '', redirectTo: '', pathMatch: 'full' },
+  { path: '**', redirectTo: '' },
+];
+
 @NgModule({
   declarations: [HomeComponent],
   imports: [CommonModule, SharedModule, RouterModule.forChild(router)],

@@ -14,5 +14,9 @@ html,body{
   width: 100%;
   height: 100%;
   background: $cl-main-background;
+  scrollbar-width: none; 
 }
 
+::-webkit-scrollbar {
+  display: none;
+}

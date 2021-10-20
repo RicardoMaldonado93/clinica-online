@@ -1,4 +1,6 @@
 <cl-navbar></cl-navbar>
 <div class="container-fluid p-0">
-  <router-outlet></router-outlet>
+  <div [@fadeAnimation]="animateRoute(outlet)" class="sf-container">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
 </div>

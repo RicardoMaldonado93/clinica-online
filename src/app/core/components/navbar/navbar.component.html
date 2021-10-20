@@ -1,7 +1,7 @@
 <cl-news></cl-news>
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" [routerLink]="['/home']" >
       Medical<strong>PRESS</strong>
       <i class="fas fa-plus-square ms-1 logo" ></i>
     </a>
@@ -28,7 +28,7 @@
 <ng-template #public>
   <ul class="navbar-nav  justify-content-center w-100">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+      <a class="nav-link active" aria-current="page" [routerLink]="['/home']" routerLinkActive="router-link-active" >Inicio</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Doctores</a>
@@ -40,7 +40,7 @@
       <a class="nav-link ">Contacto</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Registro</a>
+      <a class="nav-link" [routerLink]="['/registro']" routerLinkActive="router-link-active" >Registro</a>
     </li>
     <li class="nav-item">
       <a class="nav-link disabled">Mis Turnos</a>

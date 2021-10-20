@@ -1,2 +1,5 @@
 <!-- 
-<ng-template [ngTemplateOutlet]="paciente"></ng-template> -->
+<ng-template *ngTemplateOutlet="condition ? template1 : template2;></ng-template> -->
+<div class="container py-5 h-100 col-sm-12 col-md-8 col-xl-6">
+  <cl-pacientes></cl-pacientes>
+</div>

@@ -2,6 +2,8 @@
 
 form{
     border-radius: 10px;
+    padding-bottom: 3rem;
+    background: $cl-text-color-white;
 }
 
 .form-control {
@@ -36,18 +38,22 @@ form{
     }
 }
 
-.file-upload{
+.file-upload .btn {
     position: absolute;
-    font-family: calibri;
-    width: 100px;
-    padding: 5px;
-    border: 1px dashed #BBB;
-    text-align: center;
-    background-color: #DDD;
+    margin-top: 115px;
+    margin-left: 115px;
+    background-color: $cl-background;
+    color:$cl-text-color-white;
+    font-size: 19px;
+    border: none;
     cursor: pointer;
-    input {
-        height: 0px;
-        width: 0px;
-        overflow: hidden;
-    }
+    text-align: center;
+    padding: 0 6px;
 }
+
+input {
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+

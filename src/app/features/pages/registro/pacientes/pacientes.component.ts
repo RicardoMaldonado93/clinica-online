@@ -12,4 +12,10 @@ export class PacientesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  uploadFile(){
+    const file = document.getElementById('file') as HTMLElement
+    file.click();
+  }
+
 }

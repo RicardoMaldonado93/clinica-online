@@ -8,8 +8,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'paciente',
     component: RegistroComponent,
+    data: { template: 'patientForm' }
+  },
+  {
+    path: 'especialista',
+    component: RegistroComponent,
+    data: { template: 'specialistForm' }
   },
   { path: '', redirectTo: '', pathMatch: 'full' },
   { path: '**', redirectTo: '' },

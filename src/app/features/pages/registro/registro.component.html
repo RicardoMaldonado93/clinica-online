@@ -1,5 +1,12 @@
 <!-- 
 <ng-template *ngTemplateOutlet="condition ? template1 : template2;></ng-template> -->
 <div class="container py-5 h-100 col-sm-12 col-md-8 col-xl-6">
-  <cl-pacientes></cl-pacientes>
+  <span [ngSwitch]="registerFormType">
+    <ng-container *ngSwitchCase="'patientForm'">
+      <cl-pacientes class="animate__animated animate__bounce"></cl-pacientes>
+    </ng-container>
+    <ng-container *ngSwitchCase="'specialistForm'">
+      <cl-especialistas class="animate__animated animate__bounce"></cl-especialistas>
+    </ng-container>
+  </span>
 </div>

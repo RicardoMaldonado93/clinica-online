@@ -14,15 +14,14 @@ export class RegistroComponent implements OnInit {
 
 
   constructor(private router:ActivatedRoute) { 
-    this.router.data.subscribe(data=>{
-      console.log(data)
-      this.registerFormType = data.template;
-
-      console.log(this.registerFormType)
-    })
+    this.registerFormType = 'patientForm'
    }
 
   ngOnInit(): void {
   }
 
+  changeTemplate(template:string){
+    console.log(template)
+    this.registerFormType = template;
+  }
 }

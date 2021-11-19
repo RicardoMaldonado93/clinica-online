@@ -18,6 +18,7 @@ li:hover{
 button{
     background: $cl-primary;
     color: $cl-text-color-white;
+    width: 100px;
     &:hover{
         transition: background-color 200ms ease-out;
         background-color: darken($cl-primary, 15);

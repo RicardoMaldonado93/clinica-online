@@ -1,3 +1,4 @@
+import { MaterialModule } from './../../../shared/vendors/material/material.module';
 import { Routes, RouterModule } from '@angular/router';
 import { RegistroComponent } from './registro.component';
 import { NgModule } from '@angular/core';
@@ -8,17 +9,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
-    path: 'paciente',
+    path: '',
     component: RegistroComponent,
-    data: { template: 'patientForm' }
   },
-  {
-    path: 'especialista',
-    component: RegistroComponent,
-    data: { template: 'specialistForm' }
-  },
-  { path: '', redirectTo: '', pathMatch: 'full' },
-  { path: '**', redirectTo: '' },
+  // { path: '', redirectTo: '', pathMatch: 'full' },
+  // { path: '**', redirectTo: '' },
 ];
 
 
@@ -28,6 +23,7 @@ const routes: Routes = [
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
+    MaterialModule,
     RouterModule.forChild(routes)
   ]
 })

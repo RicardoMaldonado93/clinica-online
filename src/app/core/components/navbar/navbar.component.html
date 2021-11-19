@@ -18,7 +18,12 @@
     </button>
     <div class="collapse navbar-collapse w-100" id="navbarNav">
      <ng-container *ngTemplateOutlet="public"></ng-container>
-      <button type="button" class="btn  ml-auto" [routerLink]="['/login']" >Login</button>    
+     <div class="col mx-lg-1 my-sm-1 my-md-1 my-1">
+       <button type="button" class="btn ml-auto" [routerLink]="['/login']" >Login</button>    
+     </div>
+     <div class="col">
+       <button type="button" class="btn ml-auto" [routerLink]="['/registro']" >Registro</button>    
+     </div>
     </div>
 
   </div>
